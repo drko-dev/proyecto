@@ -56,7 +56,7 @@ class Users implements UserInterface
     /**
      * @var string $roles
      *
-     * @ORM\Column(name="roles", type="string", columnDefinition="ENUM('ROLE_ADMIN', 'ROLE_USER')" ,length=50)
+     * @ORM\Column(name="roles", type="string", length=50)
      * @Assert\NotBlank()
      */
     private $roles;

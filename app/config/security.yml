@@ -27,17 +27,18 @@ security:
         dev:
             pattern: ^/(_(profiler|wdt)|css|images|js)/
             security: false
-        
-        users:
-            pattern: ^/users
+
+        login:
+            pattern: ^/ 
             anonymous: ~
             provider: entity_provider
             form_login:
-                login_path: /users/login
-                check_path: /users/login
+                login_path: login
+                check_path: login
             logout:
-                path: /users/logout
-                path: /target
+                path: logout
+                target: /
+
         main:
             anonymous: ~
             # activate different ways to authenticate
@@ -49,5 +50,6 @@ security:
             #form_login: ~
     
     access_control:
-    - { path: ^/users/login, roles: IS_AUTHENTICATED_ANONYMOUSLY }
+    - { path: ^/login, roles: IS_AUTHENTICATED_ANONYMOUSLY }
     - { path: ^/users, roles: ['ROLE_ADMIN', 'ROLE_USER'] }
+    - { path: ^/admin, roles: ROLE_ADMIN }
