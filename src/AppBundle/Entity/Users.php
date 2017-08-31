@@ -53,6 +53,13 @@ class Users implements UserInterface
      */
     private $email;
 
+    /**
+     * @var string $roles
+     *
+     * @ORM\Column(name="roles", type="string", columnDefinition="ENUM('ROLE_ADMIN', 'ROLE_USER')" ,length=50)
+     * @Assert\NotBlank()
+     */
+    private $roles;
 
     /**
      * Get id
@@ -154,9 +161,27 @@ class Users implements UserInterface
         return null;
     }
 
+    /**
+     * Set roles
+     *
+     * @param string $roles
+     *
+     * @return Users
+     */
+    public function setRoles($roles)
+    {
+        $this->roles = $roles;
+    
+        return $this;
+    }
+    /**
+     * Get roles
+     *
+     * @return string 
+     */
     public function getRoles()
     {
-        return  ['ROLE_ADMIN'];
+        return array($this->roles);
     }
 
     public function eraseCredentials()
