@@ -8,19 +8,19 @@ security:
     # https://symfony.com/doc/current/security.html#b-configuring-how-users-are-loaded
     providers:            # Required
         # Examples:
-        in_memory_provider:
-            memory:
-                users:
-                    admin:
-                        password: 1234
-                        roles: [ROLE_USER, ROLE_ADMIN]
+        # in_memory_provider:
+        #     memory:
+        #         users:
+        #             admin:
+        #                 password: 1234
+        #                 roles: [ROLE_USER, ROLE_ADMIN]
 
         entity_provider:
             entity:
-                class: AppBundle:Users
+                class: AppBundle:Users 
                 property: username
                 # name of a non-default entity manager
-                manager_name: ~
+                #manager_name: ~
     
     firewalls:
         # disables authentication for assets and the profiler, adapt it according to your needs
@@ -31,7 +31,7 @@ security:
         users:
             pattern: ^/users
             anonymous: ~
-            provider: in_memory_provider
+            provider: entity_provider
             form_login:
                 login_path: /users/login
                 check_path: /users/login

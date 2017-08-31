@@ -156,7 +156,7 @@ class Users implements UserInterface
 
     public function getRoles()
     {
-        return  array('ROLE_USER');
+        return  ['ROLE_ADMIN'];
     }
 
     public function eraseCredentials()
