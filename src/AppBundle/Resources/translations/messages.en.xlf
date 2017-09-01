@@ -2,21 +2,45 @@
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
     <file source-language="en" target-language="en" datatype="plaintext" original="file.ext">
         <body>
-            <trans-unit id="1-1">
+            <trans-unit id="1">
                 <source>Welcome-message</source>
                 <target>Welcome !</target>
             </trans-unit>
-            <trans-unit id="2-1_login">
-                <source>user</source>
+            <trans-unit id="1_login">
+                <source>login-user</source>
                 <target>User name</target>
             </trans-unit>
-            <trans-unit id="3-2_login">
-                <source>password</source>
+            <trans-unit id="2_login">
+                <source>login-password</source>
                 <target>Password</target>
             </trans-unit>
-            <trans-unit id="4-3_login">
-                <source>submit</source>
+            <trans-unit id="3_login">
+                <source>login-submit</source>
                 <target>Enter</target>
+            </trans-unit>
+			<trans-unit id="1_register">
+                <source>form-username</source>
+                <target>User name</target>
+            </trans-unit>
+            <trans-unit id="2_register">
+                <source>form-email</source>
+                <target>Email</target>
+            </trans-unit>
+            <trans-unit id="3_register">
+                <source>form-pass</source>
+                <target>Password</target>
+            </trans-unit>
+            <trans-unit id="4_register">
+                <source>form-pass-repeat</source>
+                <target>Repeat password</target>
+            </trans-unit>
+            <trans-unit id="5_register">
+                <source>form-save</source>
+                <target>Save</target>
+            </trans-unit>
+            <trans-unit id="6_register">
+                <source>form-clear</source>
+                <target>Clear</target>
             </trans-unit>
         </body>
     </file>

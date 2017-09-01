@@ -7,16 +7,40 @@
                 <target>Bienvenidos !</target>
             </trans-unit>
             <trans-unit id="1_login">
-                <source>user</source>
+                <source>login-user</source>
                 <target>Nombre usuario</target>
             </trans-unit>
             <trans-unit id="2_login">
-                <source>password</source>
+                <source>login-password</source>
                 <target>Clave</target>
             </trans-unit>
-            <trans-unit id="4-3_login">
-                <source>submit</source>
+            <trans-unit id="3_login">
+                <source>login-submit</source>
                 <target>Ingresar</target>
+            </trans-unit>
+			<trans-unit id="1_register">
+                <source>form-username</source>
+                <target>Nombre de usuario</target>
+            </trans-unit>
+            <trans-unit id="2_register">
+                <source>form-email</source>
+                <target>Email</target>
+            </trans-unit>
+            <trans-unit id="3_register">
+                <source>form-pass</source>
+                <target>Clave</target>
+            </trans-unit>
+            <trans-unit id="4_register">
+                <source>form-pass-repeat</source>
+                <target>Repite la clave</target>
+            </trans-unit>
+            <trans-unit id="5_register">
+                <source>form-save</source>
+                <target>Guardar</target>
+            </trans-unit>
+            <trans-unit id="6_register">
+                <source>form-clear</source>
+                <target>Limpiar</target>
             </trans-unit>
         </body>
     </file>
