@@ -7,10 +7,10 @@
 {% endif %}
 
 <form action="{{ path('login') }}" method="post">
-    <label for="username">Usuario:</label>
+    <label for="username"> {% trans %} user {% endtrans %} </label>
     <input type="text" id="username" name="_username" value="{{ last_username }}" />
 
-    <label for="password">Clave:</label>
+    <label for="password"> {% trans %} password {% endtrans %}</label>
     <input type="password" id="password" name="_password" />
 
     {#
@@ -19,7 +19,7 @@
         <input type="hidden" name="_target_path" value="/account" />
     #}
 
-    <button type="submit">login</button>
+    <button type="submit"> {% trans %} submit {% endtrans %}</button>
 </form>
 
 {% endblock %}
