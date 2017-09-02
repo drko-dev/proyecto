@@ -1,6 +1,15 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
+{# ...or you can read and display every flash message available #}
+{% for label, messages in app.flashes %}
+    {% for message in messages %}
+        <div class="flash-{{ label }}">
+            {{ message }}
+        </div>
+    {% endfor %}
+{% endfor %}
+
     <h2> {% trans %}Welcome-message{% endtrans %}  </h2>
     <h3><a href="{{ path('users_page') }}">AQUI Usuarios</a></h3>
     <h3><a href="{{ path('admin_page') }}">AQUI Administradores</a></h3>

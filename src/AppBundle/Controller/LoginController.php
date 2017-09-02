@@ -47,7 +47,8 @@ class LoginController extends Controller
 
             // ... do any other work - like sending them an email, etc
             // maybe set a "flash" success message for the user
-            //return new response("Usuario Registrado");
+            $successMessage = $this->get('translator')->trans('register-success');
+            $this->addFlash('mensaje', $successMessage);
             return $this->redirectToRoute('homepage');
         }
 
