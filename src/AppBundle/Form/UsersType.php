@@ -5,7 +5,6 @@ namespace AppBundle\Form;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
-
 use Symfony\Component\Form\Extension\Core\Type\EmailType;
 use Symfony\Component\Form\Extension\Core\Type\TextType;
 use Symfony\Component\Form\Extension\Core\Type\RepeatedType;
@@ -20,15 +19,20 @@ class UsersType extends AbstractType
      */
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
-        $builder->add('username', TextType::class, array('label_format' => 'form-username'))
-                ->add('email', EmailType::class, array('label_format' => 'form-email'))
+        $builder->add('username', TextType::class, array('label' => 'form-username', 
+                    'attr' => array('placeholder' => 'you-username',)))
+                ->add('email', EmailType::class, array('label' => 'form-email',
+                    'attr' => array('placeholder' => 'you-email',)))
+
                 ->add('plainPassword', RepeatedType::class, array(
                     'type' => PasswordType::class,
-                    'first_options'  => array('label' => 'form-pass'),
-                    'second_options' => array('label' => 'form-pass-repeat'),
+                    'first_options'  => array('label' => 'form-pass',
+                    'attr' => array('placeholder' => 'you-pass',)),
+                    'second_options' => array('label' => 'form-pass-repeat',
+                    'attr' => array('placeholder' => 'you-pass-repeat',)),
                     ))
-                ->add('save', SubmitType::class, array('label_format' => 'form-save',))
-                ->add('clear', ResetType::class, array('label_format' => 'form-clear',));
+                ->add('save', SubmitType::class, array('label' => 'form-save'))
+                ->add('clear', ResetType::class, array('label' => 'form-clear'));
     }
     
     /**
@@ -41,11 +45,11 @@ class UsersType extends AbstractType
         ));
     }
 
-    // /**
-    //  * {@inheritdoc}
-    //  */
-    // public function getBlockPrefix()
-    // {
-    //     return 'AppBundle_users';
-    // }
+    /**
+     * {@inheritdoc}
+     */
+    public function getBlockPrefix()
+    {
+        return 'AppBundle_users';
+    }
 }

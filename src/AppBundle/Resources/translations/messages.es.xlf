@@ -42,6 +42,22 @@
                 <source>form-clear</source>
                 <target>Limpiar</target>
             </trans-unit>
+            <trans-unit id="7_register">
+                <source>you-username</source>
+                <target>Ingrese su nombre de usuario</target>
+            </trans-unit>
+            <trans-unit id="8_register">
+                <source>you-email</source>
+                <target>Ingrese su dirección de email</target>
+            </trans-unit>
+            <trans-unit id="9_register">
+                <source>you-pass</source>
+                <target>Ingrese una clave</target>
+            </trans-unit>
+            <trans-unit id="10_register">
+                <source>you-pass-repeat</source>
+                <target>Repita la clave</target>
+            </trans-unit>
         </body>
     </file>
 </xliff>

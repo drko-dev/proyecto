@@ -9,6 +9,6 @@ class UsersController extends Controller
 {
     public function indexAction()
     {
-        return $this->render('AppBundle:Users:index.html.twig');
+        return $this->render('users/index.html.twig');
     }
 }

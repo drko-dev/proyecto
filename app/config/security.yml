@@ -38,6 +38,7 @@ security:
             logout:
                 path: logout
                 target: /%locale%
+            access_denied_handler: AppBundle\Security\AccessDeniedHandler
 
         main:
             anonymous: ~
