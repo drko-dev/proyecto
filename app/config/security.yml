@@ -39,6 +39,12 @@ security:
                 path: logout
                 target: /%locale%
             access_denied_handler: AppBundle\Security\AccessDeniedHandler
+            
+            remember_me:
+                    secret: '%secret%'
+                    lifetime: 31536000
+                    path: /
+
 
         main:
             anonymous: ~

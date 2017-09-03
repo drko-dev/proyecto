@@ -18,6 +18,10 @@
                 <source>login-submit</source>
                 <target>Enter</target>
             </trans-unit>
+            <trans-unit id="4_login">
+                <source>login-rememberme</source>
+                <target>Keep me logged in</target>
+            </trans-unit>
 			<trans-unit id="1_register">
                 <source>form-username</source>
                 <target>User name</target>
