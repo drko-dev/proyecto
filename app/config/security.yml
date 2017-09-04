@@ -37,7 +37,7 @@ security:
                 check_path: login
             logout:
                 path: logout
-                target: /%locale%
+                target: /
             access_denied_handler: AppBundle\Security\AccessDeniedHandler
             
             remember_me:
@@ -58,5 +58,5 @@ security:
     
     access_control:
     - { path: ^/(login|register), roles: IS_AUTHENTICATED_ANONYMOUSLY }
-    - { path: ^/(en|es)/users, roles: ['ROLE_ADMIN', 'ROLE_USER'] }
-    - { path: ^/(en|es)/admin, roles: ROLE_ADMIN }
+    - { path: ^/users, roles: ['ROLE_ADMIN', 'ROLE_USER'] }
+    - { path: ^/admin, roles: ROLE_ADMIN }

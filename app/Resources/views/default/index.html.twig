@@ -1,4 +1,4 @@
-{% extends 'base.html.twig' %}
+{% extends 'layout.html.twig' %}
 
 {% block body %}
 {# ...or you can read and display every flash message available #}
@@ -9,10 +9,14 @@
         </div>
     {% endfor %}
 {% endfor %}
-
+<div class="container">
+	<div class="alert alert-primary" role="alert">
+	  This is a primary alert—check it out!
+	</div>
     <h2> {% trans %}Welcome-message{% endtrans %}  </h2>
     <h3><a href="{{ path('users_page') }}">AQUI Usuarios</a></h3>
     <h3><a href="{{ path('admin_page') }}">AQUI Administradores</a></h3>
     <h3><a href="{{ path('registration') }}">AQUI Registrarse</a></h3>
+</div>
 
 {% endblock %}

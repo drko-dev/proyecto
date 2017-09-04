@@ -22,6 +22,10 @@
                 <source>login-rememberme</source>
                 <target>Keep me logged in</target>
             </trans-unit>
+            <trans-unit id="5_login">
+                <source>access-denied</source>
+                <target>You do not have permission to view this content.</target>
+            </trans-unit>
 			<trans-unit id="1_register">
                 <source>form-username</source>
                 <target>User name</target>
