@@ -5,7 +5,7 @@ var HtmlWebpackPlugin = require('html-webpack-plugin');
 
 
 const VENDOR_LIBS = ['bootstrap', 'swiper'];
-const BUNDLE_LIBS = ['./src/index.js']; //, './src/work.js'];
+const BUNDLE_LIBS = ['./src/index.js', "webpack-material-design-icons"]; //, './src/work.js'];
 
 
 
