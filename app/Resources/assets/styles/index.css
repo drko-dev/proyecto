@@ -4,7 +4,7 @@ body{
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Nunito';
+    font-family: 'Roboto';
 }
 
 
@@ -49,7 +49,7 @@ h1, h2, h3, h4, h5, h6 {
 	
 .swiper-slide {
     
-    font-family: 'Nunito';
+    font-family: 'Roboto';
 	text-align: left;
 	font-size: 40px;
 /*	background: rgba(40,40,40,0.2);*/

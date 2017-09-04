@@ -5,7 +5,7 @@ var HtmlWebpackPlugin = require('html-webpack-plugin');
 
 
 const VENDOR_LIBS = ['bootstrap', 'swiper'];
-const BUNDLE_LIBS = ['./src/index.js', './src/work.js'];
+const BUNDLE_LIBS = ['./src/index.js']; //, './src/work.js'];
 
 
 
@@ -17,7 +17,7 @@ module.exports = {
     },
     output: {
         path: path.join(__dirname, '../../../web'),
-        filename: 'js/[name].[chunkhash].js',
+        filename: 'js/[name].js',
     },
     module: {
         rules: [
@@ -51,18 +51,18 @@ module.exports = {
                 use: [{
                   loader: 'file-loader',
                   options: {
-                    name: 'fonts/[name].[ext]',
+                    name: '/[name].[ext]',
                     outputPath: 'fonts',
-                    publicPath: 'fonts'
+                    publicPath: '/'
                   }
                 }]
-                
-            },
-            {
-              // HTML LOADER
-              test: /\.html$/,
-              loader: 'html-loader'
-            }
+            }   
+            // ,
+            // {
+            //   // HTML LOADER
+            //   test: /\.html$/,
+            //   loader: 'html-loader'
+            // }
         ]
     },
     plugins: [
@@ -82,10 +82,10 @@ module.exports = {
         //    filename:'work.html',
         //    template: 'src/work.html'
         // }),
-        new HtmlWebpackPlugin({
-           filename: '../../app/Resources/views/layout.html.twig',
-           template: '../views/base.html.twig'
-        }),
+        // new HtmlWebpackPlugin({
+        //    filename: '../app/Resources/views/layout.html.twig',
+        //    template: '../views/base.html.twig'
+        // }),
         new ExtractTextPlugin('css/styles.css')
     ]
     

@@ -91,7 +91,7 @@
 /******/ 		if (__webpack_require__.nc) {
 /******/ 			script.setAttribute("nonce", __webpack_require__.nc);
 /******/ 		}
-/******/ 		script.src = __webpack_require__.p + "js/" + chunkId + "." + {"0":"8dd1934f13ecb44cbbae","1":"b390f0dcd2c9ff9f2ae3"}[chunkId] + ".js";
+/******/ 		script.src = __webpack_require__.p + "js/" + chunkId + ".js";
 /******/ 		var timeout = setTimeout(onScriptComplete, 120000);
 /******/ 		script.onerror = script.onload = onScriptComplete;
 /******/ 		function onScriptComplete() {
