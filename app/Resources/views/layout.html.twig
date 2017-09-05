@@ -10,6 +10,7 @@
         <title>{% block title %}Proyecto{% endblock %}</title>
     </head>
     <body>
+        {% include 'header.html.twig' %}
         {% block body %}{% endblock %}
         {% block javascripts %}
             <script type="text/javascript" src="js/manifest.js"></script>

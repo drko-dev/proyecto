@@ -2,27 +2,39 @@
 
 {% block body %}
 
-{% if error %}
-    <div>{{ error.messageKey|trans(error.messageData, 'security') }}</div>
-{% endif %}
+    {% if error %}
+        <div>{{ error.messageKey|trans(error.messageData, 'security') }}</div>
+    {% endif %}
+        <!-- Modal Trigger -->
+    <a class="waves-effect waves-light btn modal-trigger" href="#modal1">login</a>
 
-<form action="{{ path('login') }}" method="post">
-    <label for="username"> {% trans %} login-user {% endtrans %} </label>
-    <input type="text" id="username" name="_username" value="{{ last_username }}" />
+        <!-- Modal Structure -->
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+          <h4>Login</h4>
 
-    <label for="password"> {% trans %} login-password {% endtrans %}</label>
-    <input type="password" id="password" name="_password" />
-    
-    <input type="checkbox" id="remember_me" name="_remember_me" checked />
-    <label for="remember_me">{% trans %} login-rememberme {% endtrans %}</label>
+            <form action="{{ path('login') }}" method="post">
+                <label for="username"> {% trans %} login-user {% endtrans %} </label>
+                <input type="text" id="username" name="_username" value="{{ last_username }}" />
 
-    {#
-        If you want to control the URL the user
-        is redirected to on success (more details below)
-        <input type="hidden" name="_target_path" value="/account" />
-    #}
+                <label for="password"> {% trans %} login-password {% endtrans %}</label>
+                <input type="password" id="password" name="_password" />
+                
+                <input type="checkbox" id="remember_me" name="_remember_me" checked />
+                <label for="remember_me">{% trans %} login-rememberme {% endtrans %}</label>
 
-    <button type="submit"> {% trans %} login-submit {% endtrans %}</button>
-</form>
+                {#
+                    If you want to control the URL the user
+                    is redirected to on success (more details below)
+                    <input type="hidden" name="_target_path" value="/account" />
+                #}
+
+                <button type="submit"> {% trans %} login-submit {% endtrans %}</button>
+            </form>
+        </div>
+        <div class="modal-footer">
+          <a href="{{ path('login') }}" class="modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+        </div>
+    </div>
 
 {% endblock %}

@@ -28,14 +28,16 @@
           <p>A bunch of text</p>
         </div>
         <div class="modal-footer">
-          <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+          <a href="{{ path('login') }}" class="modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
         </div>
     </div>
 
     <h2> {% trans %}Welcome-message{% endtrans %}  </h2>
-    <h3><a href="{{ path('users_page') }}">AQUI Usuarios</a></h3>
-    <h3><a href="{{ path('admin_page') }}">AQUI Administradores</a></h3>
-    <h3><a href="{{ path('registration') }}">AQUI Registrarse</a></h3>
+    <h3><a class="btn waves-effect waves-light" href="{{ path('login') }}">ingresar</a></h3>
+
+    <h3><a class="btn waves-effect waves-light" href="{{ path('users_page') }}">AQUI Usuarios</a></h3>
+    <h3><a class="btn waves-effect waves-light" href="{{ path('admin_page') }}">AQUI Administradores</a></h3>
+    <h3><a class="btn waves-effect waves-light" href="{{ path('registration') }}">AQUI Registrarse</a></h3>
 </div>
 
 {% endblock %}
