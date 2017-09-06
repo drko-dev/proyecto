@@ -1,6 +1,8 @@
 {% extends 'layout.html.twig' %}
 
 {% block body %}
+
+{% include 'header.html.twig'  %}
 {# ...or you can read and display every flash message available #}
 {% for label, messages in app.flashes %}
     {% for message in messages %}

@@ -11,7 +11,6 @@
         <title>{% block title %}Proyecto{% endblock %}</title>
     </head>
     <body>
-        {% include 'header.html.twig' %}
         {% block body %}{% endblock %}
         {% block javascripts %}
             <script src="{{ asset('build/app.js') }}"></script>

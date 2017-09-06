@@ -2,3 +2,8 @@ $brand-primary: darken(#428bca, 20%);
 
 @import '~material-design-icons/iconfont/material-icons';
 @import '~materialize-css/sass/materialize.scss';
+
+.checkbox-gray[type="checkbox"].filled-in:checked + label:after{
+     border: 2px solid #0d47a1;
+     background-color: #0d47a1;
+}
