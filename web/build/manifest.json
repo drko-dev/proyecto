@@ -1,5 +1,5 @@
 {
-  "build/app.js": "/build/app.js",
+  "build/css/global.css": "/build/css/global.css",
   "build/fonts/MaterialIcons-Regular.eot": "/build/fonts/MaterialIcons-Regular.e79bfd88.eot",
   "build/fonts/MaterialIcons-Regular.ttf": "/build/fonts/MaterialIcons-Regular.a37b0c01.ttf",
   "build/fonts/MaterialIcons-Regular.woff": "/build/fonts/MaterialIcons-Regular.012cf6a1.woff",
@@ -14,5 +14,5 @@
   "build/fonts/Roboto-Regular.woff2": "/build/fonts/Roboto-Regular.5136cbe6.woff2",
   "build/fonts/Roboto-Thin.woff": "/build/fonts/Roboto-Thin.44b78f14.woff",
   "build/fonts/Roboto-Thin.woff2": "/build/fonts/Roboto-Thin.1f35e6a1.woff2",
-  "build/global.css": "/build/global.css"
+  "build/js/app.js": "/build/js/app.js"
 }

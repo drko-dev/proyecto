@@ -6,6 +6,10 @@
                 <source>Welcome-message</source>
                 <target>Bienvenidos !</target>
             </trans-unit>
+            <trans-unit id="0_login">
+                <source>login</source>
+                <target>Iniciar sesión</target>
+            </trans-unit>
             <trans-unit id="1_login">
                 <source>login-user</source>
                 <target>Nombre usuario</target>
@@ -25,6 +29,10 @@
             <trans-unit id="5_login">
                 <source>access-denied</source>
                 <target>No tienes permisos para ver el este conenido.</target>
+            </trans-unit>
+            <trans-unit id="0_register">
+                <source>register</source>
+                <target>Registrarse</target>
             </trans-unit>
 			<trans-unit id="1_register">
                 <source>form-username</source>

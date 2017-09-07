@@ -5,12 +5,15 @@
     {% if error %}
         <div>{{ error.messageKey|trans(error.messageData, 'security') }}</div>
     {% endif %}
-
+<div class="margin-top-login"></div>
 <div class="container">
-    <div class="row">   
+    <div class="row login">   
       <div class="col s12 m6 offset-m3">
-        <div class="card-panel z-depth-3">
+        <div class="card-panel login z-depth-4">
             <form action="{{ path('login') }}" method="post">
+                <div class="center-align">
+                    <span class="card-title"> {% trans %} login {% endtrans %} </span>
+                </div>
                 <div class="input-field">
                     <label for="username"> {% trans %} login-user {% endtrans %} </label>
                     <input type="text" id="username" name="_username" value="{{ last_username }}" />
@@ -26,6 +29,7 @@
                 {#
                     If you want to control the URL the user
                     is redirected to on success (more details below)
+             
                     <input type="hidden" name="_target_path" value="/account" />
                 #}
                 <div class="right-align">

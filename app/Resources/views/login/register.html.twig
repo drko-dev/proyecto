@@ -1,14 +1,33 @@
 {% extends 'layout.html.twig' %}
 
 {% block body %}
-
-{{ form_start(form) }}
-    {{ form_row(form.username) }}
-    {{ form_row(form.email) }}
-    {{ form_row(form.plainPassword.first) }}
-    {{ form_row(form.plainPassword.second) }}
-    {{ form_row(form.save) }}
-    {{ form_row(form.clear) }}
-{{ form_end(form) }}
+<div class="margin-top-login"></div>
+<div class="container">
+    <div class="row login">   
+      <div class="col s12 m6 offset-m3">
+        <div class="card-panel login z-depth-4">
+			{{ form_start(form) }}
+			    <div class="center-align">
+                    <span class="card-title"> {% trans %} register {% endtrans %} </span>
+                </div>
+			    <div class="input-field">
+			    	{{ form_row(form.username) }}
+				</div>
+                <div class="input-field">
+			    	{{ form_row(form.email) }}
+				</div>
+                <div class="input-field">
+			    	{{ form_row(form.plainPassword.first) }}
+				</div>
+                <div class="input-field">
+			    	{{ form_row(form.plainPassword.second) }}
+				</div>
+			    {{ form_row(form.save) }}
+			    {{ form_row(form.clear) }}
+			{{ form_end(form) }}
+		</div>
+	  </div>
+	</div>
+</div>	
 
 {% endblock %}

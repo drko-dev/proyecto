@@ -19,20 +19,16 @@ class UsersType extends AbstractType
      */
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
-        $builder->add('username', TextType::class, array('label' => 'form-username', 
-                    'attr' => array('placeholder' => 'you-username',)))
-                ->add('email', EmailType::class, array('label' => 'form-email',
-                    'attr' => array('placeholder' => 'you-email',)))
-
+        $builder->add('username', TextType::class, array('label' => 'form-username',))
+                ->add('email', EmailType::class, array('label' => 'form-email',))
                 ->add('plainPassword', RepeatedType::class, array(
                     'type' => PasswordType::class,
-                    'first_options'  => array('label' => 'form-pass',
-                    'attr' => array('placeholder' => 'you-pass',)),
-                    'second_options' => array('label' => 'form-pass-repeat',
-                    'attr' => array('placeholder' => 'you-pass-repeat',)),
-                    ))
-                ->add('save', SubmitType::class, array('label' => 'form-save'))
-                ->add('clear', ResetType::class, array('label' => 'form-clear'));
+                    'first_options'  => array('label' => 'form-pass',),
+                    'second_options' => array('label' => 'form-pass-repeat',)))
+                ->add('save', SubmitType::class, array('label' => 'form-save',
+                    'attr' => array('class' => 'waves-effect waves-light btn blue darken-4',)))
+                ->add('clear', ResetType::class, array('label' => 'form-clear',
+                    'attr' => array('class' => 'waves-effect waves-light btn blue darken-4',)));
     }
     
     /**
