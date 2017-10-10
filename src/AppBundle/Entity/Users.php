@@ -80,6 +80,11 @@ class Users implements UserInterface
     private $updatedAt;
 
     /**
+     * @ORM\OneToMany(targetEntity="Plant", mappedBy="users")
+     */
+    private $plant;
+
+    /**
      * Get id
      *
      * @return int

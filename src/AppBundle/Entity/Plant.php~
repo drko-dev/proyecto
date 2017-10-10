@@ -1,0 +1,44 @@
+<?php
+
+namespace AppBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * @ORM\Entity
+ */
+class Plant
+{
+    /**
+     * @ORM\Id
+     * @ORM\Column(type="integer")
+     * @ORM\GeneratedValue(strategy="AUTO")
+     */
+    private $id;
+
+    /**
+     * @ORM\Column(type="string", length=60, nullable=true)
+     */
+    private $name;
+
+    /**
+     * @ORM\Column(type="integer", length=25, nullable=true)
+     */
+    private $phone;
+
+    /**
+     * @ORM\Column(type="string", length=100, nullable=true)
+     */
+    private $address;
+
+    /**
+     * @ORM\ManyToOne(targetEntity="Users", inversedBy="plant")
+     * @ORM\JoinColumn(name="users_id", referencedColumnName="id")
+     */
+    private $users;
+
+    /**
+     * @ORM\ManyToMany(targetEntity="Animal", mappedBy="plant")
+     */
+    private $animal;
+}
