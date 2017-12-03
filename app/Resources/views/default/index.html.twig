@@ -1,8 +1,6 @@
 {% extends 'layout.html.twig' %}
 
-{% block body %}
-
-{% include 'header.html.twig'  %}
+{% block article %}
 {# ...or you can read and display every flash message available #}
 {% for label, messages in app.flashes %}
     {% for message in messages %}
@@ -12,7 +10,6 @@
     {% endfor %}
 {% endfor %}
 <div class="container">
-
     <ul id="slide-out" class="side-nav">
         <li>
             <div class="user-view">
@@ -33,14 +30,15 @@
         <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
     </ul>
     
-    
+
+    {# <img src="build/images/wireless.png" alt=""> #}
+    {# 
     <h2> {% trans %}Welcome-message{% endtrans %}  </h2>
-    <a href="#" data-activates="slide-out" class="button-collapse show-on-large btn-floating grey darken-3"><i class="material-icons">menu</i></a> 
+
     <h3><a class="waves-effect waves-light btn blue darken-4" href="{{ path('login') }}">ingresar</a></h3>
 
     <h3><a class="waves-effect waves-light btn blue darken-4" href="{{ path('users_page') }}">AQUI Usuarios</a></h3>
     <h3><a class="waves-effect waves-light btn blue darken-4" href="{{ path('admin_page') }}">AQUI Administradores</a></h3>
-    <h3><a class="waves-effect waves-light btn blue darken-4" href="{{ path('registration') }}">AQUI Registrarse</a></h3>
-</div>
-
+    <h3><a class="waves-effect waves-light btn blue darken-4" href="{{ path('registration') }}">AQUI Registrarse</a></h3> #}
+</div>  
 {% endblock %}

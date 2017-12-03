@@ -1,6 +1,24 @@
 @import '~material-design-icons/iconfont/material-icons';
 @import '~materialize-css/sass/materialize.scss';
 
+body {
+	background:
+	radial-gradient(black 15%, transparent 16%) 0 0,
+	radial-gradient(black 15%, transparent 16%) 8px 8px,
+	radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
+	radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
+	background-color:#1f1f1f;
+	background-size:16px 16px;
+
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+main {
+	flex: 1 0 auto;
+}
+
 .margin-top-login {
     height: 2em;
 }
@@ -11,6 +29,40 @@
     button {
         margin-top: 1em;
     }
+}
+
+nav .button-collapse {
+    padding: 0 15px;
+    margin: 0 10px;
+}
+
+nav a {
+	color: #000;
+}
+
+nav div ul:not(.browser-default) {
+    padding-right: 10px;
+}
+
+//COLOR NEGRO EN TEXTO
+nav ul a {
+	color: #000;
+}
+//COLOR NEGRO EN LOS ICONOS
+nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
+	color: black;
+}
+
+img{
+	max-width: 100%;
+    display: block;
+    height: auto;
+    margin: 10% 0;
+    padding: 0 10%;
+}
+
+.page-footer {
+    background-color: #2647a3;
 }
 
 .checkbox-gray[type="checkbox"].filled-in:checked+label:after {
