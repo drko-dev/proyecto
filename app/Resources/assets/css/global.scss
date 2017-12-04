@@ -19,54 +19,43 @@ main {
 	flex: 1 0 auto;
 }
 
-.margin-top-login {
-    height: 2em;
+// .margin-top-login {
+//     height: 2em;
+// }
+
+// .card-panel.login {
+//     max-width: 350px;
+
+//     button {
+//         margin-top: 1em;
+//     }
+// }
+
+// nav div ul:not(.browser-default) {
+//     padding-right: 10px;
+// }
+
+// .checkbox-gray[type="checkbox"].filled-in:checked+label:after {
+//     border: 2px solid #0d47a1;
+//     background-color: #0d47a1;
+
+// 
+
+// MARGIN TOP FOOTER
+.page-footer-top {
+    padding-top: 0;
 }
 
-.card-panel.login {
-    max-width: 350px;
-
-    button {
-        margin-top: 1em;
-    }
+// MARGEN SUP LOGO MARIPOSA
+.logo-margin{
+	margin-top: 5px;
 }
+// REDIMENSIONA IMAGENES AUTOMATICAMENTE
+.imagen-responsive {
 
-nav .button-collapse {
-    padding: 0 15px;
-    margin: 0 10px;
-}
-
-nav a {
-	color: #000;
-}
-
-nav div ul:not(.browser-default) {
-    padding-right: 10px;
-}
-
-//COLOR NEGRO EN TEXTO
-nav ul a {
-	color: #000;
-}
-//COLOR NEGRO EN LOS ICONOS
-nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
-	color: black;
-}
-
-img{
 	max-width: 100%;
     display: block;
     height: auto;
     margin: 10% 0;
     padding: 0 10%;
-}
-
-.page-footer {
-    background-color: #2647a3;
-}
-
-.checkbox-gray[type="checkbox"].filled-in:checked+label:after {
-    border: 2px solid #0d47a1;
-    background-color: #0d47a1;
-
 }
