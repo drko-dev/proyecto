@@ -8,7 +8,7 @@ Encore
     .setPublicPath('/build')
 
     // empty the outputPath dir before each build
-    .cleanupOutputBeforeBuild()
+    //.cleanupOutputBeforeBuild()
 
     // will output as web/build/app.js
     .addEntry('js/app', './app/Resources/assets/js/main.js')

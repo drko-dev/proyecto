@@ -1,6 +1,11 @@
 {% extends 'layout.html.twig' %}
 
 {% block body %}
+{% for message in app.flashes('alert') %}
+    <div class="alert alert-notice">
+        {{ message }}
+    </div>
+{% endfor %}
 <div class="margin-top-login"></div>
 <div class="container">
     <div class="row login">   

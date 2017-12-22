@@ -61,7 +61,15 @@
                     <li><a href="#">Contacto</a></li>
                 </ul>                    
             </div>
-
+            {# ...or you can read and display every flash message available #}
+            {% for label, messages in app.flashes %}
+                {% for message in messages %}
+                    <div class="flash-{{ label }}">
+                        {{ message }}
+                    </div>
+                {% endfor %}
+            {% endfor %}
+            
             {% endblock %}
         </nav>
         {# FIN NAV #}
